@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reon Vaz - Digital Marketing & Operations</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0B1120;
+            color: #D1D5DB; /* text-gray-300 */
+        }
+        .animated-gradient {
+            background: linear-gradient(-45deg, #0B1120, #111827, #1F2937, #374151);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .section-title {
+            color: #F9FAFB; /* text-gray-50 */
+        }
+        .accent-color {
+            color: #38BDF8; /* text-sky-400 */
+        }
+        .card {
+            background-color: rgba(31, 41, 55, 0.5); /* bg-gray-800 with opacity */
+            border: 1px solid #374151; /* border-gray-700 */
+            backdrop-filter: blur(10px);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            border-color: #38BDF8;
+        }
+        .tag {
+            background-color: #374151; /* bg-gray-700 */
+            color: #E5E7EB; /* text-gray-200 */
+            transition: background-color 0.3s ease;
+        }
+        .tag:hover {
+            background-color: #4B5563; /* bg-gray-600 */
+        }
+        .timeline-dot {
+            transition: transform 0.3s ease;
+        }
+        .timeline-item:hover .timeline-dot {
+            transform: scale(1.5);
+        }
+        
+        /* Scroll Animation */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="antialiased animated-gradient">
+
+    <!-- Header & Navigation -->
+    <header class="bg-gray-900/50 backdrop-blur-sm sticky top-0 z-50 border-b border-gray-700/50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-white tracking-wider">Reon Vaz</a>
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="#experience" class="text-gray-300 hover:text-sky-400 transition-colors">Experience</a>
+                <a href="#projects" class="text-gray-300 hover:text-sky-400 transition-colors">Projects</a>
+                <a href="#skills" class="text-gray-300 hover:text-sky-400 transition-colors">Skills</a>
+                <a href="#education" class="text-gray-300 hover:text-sky-400 transition-colors">Education</a>
+                <a href="#contact" class="bg-sky-500 hover:bg-sky-600 text-white font-semibold px-4 py-2 rounded-lg transition-colors shadow-lg shadow-sky-500/20">Contact</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-gray-300 focus:outline-none">
+                <i data-lucide="menu"></i>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="#experience" class="block py-2 text-gray-300 hover:text-sky-400">Experience</a>
+            <a href="#projects" class="block py-2 text-gray-300 hover:text-sky-400">Projects</a>
+            <a href="#skills" class="block py-2 text-gray-300 hover:text-sky-400">Skills</a>
+            <a href="#education" class="block py-2 text-gray-300 hover:text-sky-400">Education</a>
+            <a href="#contact" class="block mt-2 bg-sky-500 hover:bg-sky-600 text-white font-semibold px-4 py-2 rounded-lg text-center">Contact</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-12 md:py-20">
+
+        <!-- Hero Section -->
+        <section id="hero" class="text-center mb-24 md:mb-40 reveal">
+            <h1 class="text-5xl md:text-7xl font-bold text-white mb-4 bg-clip-text text-transparent bg-gradient-to-r from-sky-300 to-sky-500">Reon Vaz</h1>
+            <h2 class="text-2xl md:text-3xl text-gray-300 mb-6">Digital Marketing & Operations Leader</h2>
+            <p class="max-w-3xl mx-auto text-lg md:text-xl text-gray-400 mb-8">
+                6+ years driving B2B/B2C digital transformation and revenue growth. Expertise in full-funnel strategy, advanced marketing automation, and AI-driven optimizations.
+            </p>
+            <div class="flex justify-center items-center space-x-6">
+                <a href="mailto:vaz.reon1998@gmail.com" class="text-gray-400 hover:text-sky-400 transition-transform transform hover:scale-125"><i data-lucide="mail" class="w-7 h-7"></i></a>
+                <a href="http://www.reonvaz.in" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-sky-400 transition-transform transform hover:scale-125"><i data-lucide="globe" class="w-7 h-7"></i></a>
+                <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-sky-400 transition-transform transform hover:scale-125"><i data-lucide="linkedin" class="w-7 h-7"></i></a>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="mb-24 md:mb-40 reveal">
+            <h2 class="section-title text-3xl font-bold mb-16 text-center">Professional Experience</h2>
+            <div class="relative border-l-2 border-gray-700/50 pl-8 md:pl-12 space-y-20">
+                <!-- Timeline Item -->
+                <div class="relative timeline-item">
+                    <div class="timeline-dot absolute -left-[42px] md:-left-[58px] top-1.5 h-6 w-6 bg-sky-500 rounded-full border-4 border-gray-900 shadow-lg shadow-sky-500/30"></div>
+                    <h3 class="text-xl font-bold text-sky-400">Marketing Operations Manager</h3>
+                    <p class="text-gray-400 font-medium mb-1">Epicenter (Supporting Branding Arc)</p>
+                    <p class="text-sm text-gray-500 mb-4">Dec 2022 - Present</p>
+                    <ul class="list-disc list-outside space-y-2 pl-5 text-gray-300">
+                        <li>Led Google, LinkedIn & Meta ad optimizations that increased leads 20% and boosted post-click engagement.</li>
+                        <li>Grew the Mumbai cross-functional team from 2 to 14, introduced OKRs, and maintained 100% on-time delivery.</li>
+                        <li>Built a ChatGPT spreadsheet to auto-create holiday posts for 35+ clients, cutting content workload by 80%.</li>
+                        <li>Automated blog-outline production with a Google Sheets OpenAI Batch workflow.</li>
+                        <li>Oversaw technical SEO audits, improving site speed to 80+ and boosting organic traffic.</li>
+                        <li>Standardized GA4 tagging and deployed GTM across client portals, sharpening attribution accuracy.</li>
+                    </ul>
+                </div>
+                <!-- Timeline Item -->
+                <div class="relative timeline-item">
+                    <div class="timeline-dot absolute -left-[42px] md:-left-[58px] top-1.5 h-6 w-6 bg-sky-500 rounded-full border-4 border-gray-900 shadow-lg shadow-sky-500/30"></div>
+                    <h3 class="text-xl font-bold text-sky-400">Marketing Operations Coordinator</h3>
+                    <p class="text-gray-400 font-medium mb-1">Epicenter (Supporting Branding Arc)</p>
+                    <p class="text-sm text-gray-500 mb-4">Feb 2020 - Dec 2022</p>
+                    <ul class="list-disc list-outside space-y-2 pl-5 text-gray-300">
+                        <li>Managed 20+ client social accounts in Zoho Social, using A/B testing to boost impressions and engagement.</li>
+                        <li>Tracked performance metrics for digital campaigns, including YouTube watch time and retention.</li>
+                        <li>Revamped workflows and A/B-tested newsletter forms, lifting lead capture rates.</li>
+                    </ul>
+                </div>
+                <!-- Timeline Item -->
+                <div class="relative timeline-item">
+                    <div class="timeline-dot absolute -left-[42px] md:-left-[58px] top-1.5 h-6 w-6 bg-sky-500 rounded-full border-4 border-gray-900 shadow-lg shadow-sky-500/30"></div>
+                    <h3 class="text-xl font-bold text-sky-400">Social Media Coordinator</h3>
+                    <p class="text-gray-400 font-medium mb-1">Academic IELTS Help - Freelance</p>
+                    <p class="text-sm text-gray-500 mb-4">2018 - 2023</p>
+                    <ul class="list-disc list-outside space-y-2 pl-5 text-gray-300">
+                        <li>Scaled Instagram growth from 2k to 95k followers within a year.</li>
+                        <li>Drove YouTube growth from 800k to 2M+ subscribers through SEO-driven content strategy.</li>
+                        <li>Produced 150+ Canva creatives quarterly, reinforcing brand consistency.</li>
+                        <li>Relaunched WordPress blog with new SEO structure, doubling organic sessions.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="mb-24 md:mb-40 reveal">
+            <h2 class="section-title text-3xl font-bold mb-16 text-center">Featured Projects</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Card -->
+                <div class="card rounded-lg overflow-hidden group">
+                    <img src="https://placehold.co/600x400/111827/38BDF8?text=AI+Content+Automator" alt="Project 1" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">AI-Powered Content Automation</h3>
+                        <p class="text-gray-400 mb-4">Developed a ChatGPT-powered system to automate social media content creation for 35+ clients.</p>
+                        <span class="tag px-3 py-1 rounded-full text-sm">OpenAI API</span>
+                        <span class="tag px-3 py-1 rounded-full text-sm">Google Sheets</span>
+                    </div>
+                </div>
+                <!-- Project Card -->
+                <div class="card rounded-lg overflow-hidden group">
+                    <img src="https://placehold.co/600x400/111827/38BDF8?text=YouTube+Growth" alt="Project 2" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">YouTube Channel Growth to 2M+</h3>
+                        <p class="text-gray-400 mb-4">Led SEO and content strategy to grow a YouTube channel from 800k to over 2 million subscribers.</p>
+                        <span class="tag px-3 py-1 rounded-full text-sm">YouTube SEO</span>
+                        <span class="tag px-3 py-1 rounded-full text-sm">Content Strategy</span>
+                    </div>
+                </div>
+                <!-- Project Card -->
+                <div class="card rounded-lg overflow-hidden group">
+                    <img src="https://placehold.co/600x400/111827/38BDF8?text=Lead+Gen+Campaign" alt="Project 3" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">Paid Media Lead Generation</h3>
+                        <p class="text-gray-400 mb-4">Managed $7k+/month ad spend across Google, Meta & LinkedIn, increasing qualified leads by 20%.</p>
+                        <span class="tag px-3 py-1 rounded-full text-sm">Google Ads</span>
+                        <span class="tag px-3 py-1 rounded-full text-sm">Performance Marketing</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills & Tech Stack Section -->
+        <section id="skills" class="mb-24 md:mb-40 reveal">
+            <h2 class="section-title text-3xl font-bold mb-16 text-center">Core Competencies & Tech Stack</h2>
+            <div class="grid md:grid-cols-2 gap-16">
+                <div>
+                    <h3 class="text-2xl font-semibold text-white mb-8 text-center md:text-left">Core Skills</h3>
+                    <div class="flex flex-wrap gap-4 justify-center md:justify-start">
+                        <div class="card p-4 rounded-lg flex-grow text-center">Marketing Ops & Automation</div>
+                        <div class="card p-4 rounded-lg flex-grow text-center">Digital Strategy, SEO & CRO</div>
+                        <div class="card p-4 rounded-lg flex-grow text-center">Full-Funnel Campaign Mgmt</div>
+                        <div class="card p-4 rounded-lg flex-grow text-center">Data Analytics & Reporting</div>
+                        <div class="card p-4 rounded-lg flex-grow text-center">Team Leadership</div>
+                        <div class="card p-4 rounded-lg flex-grow text-center">Performance Marketing</div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold text-white mb-8 text-center md:text-left">Tech Stack</h3>
+                    <div class="flex flex-wrap gap-3 justify-center md:justify-start">
+                        <span class="tag px-4 py-2 rounded-full text-sm">Zoho Suite</span>
+                        <span class="tag px-4 py-2 rounded-full text-sm">Google Ads</span>
+                        <span class="tag px-4 py-2 rounded-full text-sm">Meta Ads</span>
+                        <span class="tag px-4 py-2 rounded-full text-sm">LinkedIn Ads</span>
+                        <span class="tag px-4 py-2 rounded-full text-sm">GA4 & GTM</span>
+                        <span class="tag px-4 py-2 rounded-full text-sm">Search Console</span>
+                        <span class="tag px-4 py-2 rounded-full text-sm">WordPress</span>
+                        <span class="tag px-4 py-2 rounded-full text-sm">ChatGPT/OpenAI</span>
+                        <span class="tag px-4 py-2 rounded-full text-sm">Looker Studio</span>
+                        <span class="tag px-4 py-2 rounded-full text-sm">Power BI</span>
+                        <span class="tag px-4 py-2 rounded-full text-sm">Adobe Suite</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education & Certifications Section -->
+        <section id="education" class="mb-24 md:mb-40 reveal">
+            <h2 class="section-title text-3xl font-bold mb-16 text-center">Education & Certifications</h2>
+            <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+                <div class="card p-6 rounded-lg">
+                    <h3 class="text-lg font-semibold text-white">Bachelor's Degree in Information Technology</h3>
+                    <p class="text-sky-400 mb-1">University of Mumbai</p>
+                    <p class="text-sm text-gray-500">May 2016 - May 2019</p>
+                </div>
+                <div class="card p-6 rounded-lg">
+                    <h3 class="text-lg font-semibold text-white">Certification in Digital Marketing</h3>
+                    <p class="text-sky-400 mb-1">IIDE - Indian Institute of Digital Education</p>
+                    <p class="text-sm text-gray-500">May 2019 - Dec 2019</p>
+                </div>
+                <div class="card p-6 rounded-lg col-span-1 md:col-span-2">
+                    <h3 class="text-lg font-semibold text-white mb-3">Professional Certifications</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="tag px-3 py-1 rounded-full text-sm">Google Ads Search</span>
+                        <span class="tag px-3 py-1 rounded-full text-sm">Google Display Ads</span>
+                        <span class="tag px-3 py-1 rounded-full text-sm">Agile Foundations</span>
+                        <span class="tag px-3 py-1 rounded-full text-sm">Generative AI Foundations</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         <!-- Contact Section -->
+        <section id="contact" class="text-center reveal">
+            <h2 class="section-title text-3xl font-bold mb-6">Get In Touch</h2>
+            <p class="max-w-2xl mx-auto text-lg text-gray-400 mb-8">
+                I'm always open to discussing new projects, creative ideas, or opportunities. Let's build something great together.
+            </p>
+            <a href="mailto:vaz.reon1998@gmail.com" class="inline-block bg-gradient-to-r from-sky-500 to-cyan-400 hover:from-sky-600 hover:to-cyan-500 text-white font-bold text-lg px-8 py-4 rounded-lg transition-all duration-300 shadow-lg shadow-sky-500/30 transform hover:scale-105">
+                Say Hello
+            </a>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-700/50 mt-24 md:mt-40">
+        <div class="container mx-auto px-6 py-8 text-center text-gray-500">
+            <p>&copy; 2024 Reon Vaz. Designed & Built with a passion for growth.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        const mobileMenuLinks = mobileMenu.getElementsByTagName('a');
+        for (let link of mobileMenuLinks) {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        }
+
+        // Scroll Reveal Animation
+        const revealElements = document.querySelectorAll('.reveal');
+        const revealOnScroll = () => {
+            const windowHeight = window.innerHeight;
+            for (let i = 0; i < revealElements.length; i++) {
+                const elementTop = revealElements[i].getBoundingClientRect().top;
+                const elementVisible = 150; // Distance from bottom of viewport to trigger
+                if (elementTop < windowHeight - elementVisible) {
+                    revealElements[i].classList.add('visible');
+                } else {
+                    // Optional: remove class to re-animate on scroll up
+                    // revealElements[i].classList.remove('visible');
+                }
+            }
+        };
+
+        window.addEventListener('scroll', revealOnScroll);
+        // Trigger on load
+        revealOnScroll();
+
+    </script>
+</body>
+</html>
